@@ -1,0 +1,6 @@
+{
+  "name": "Happy-cli",
+  "tagline": "",
+  "body": "## Welcome\r\nGet happy news right from your command line!\r\n\r\n### How to Install\r\nFirst, you must have npm installed.<br>\r\nThen, _sudo npm install -g happy-cli_<br>\r\nWarning: Make sure you install it globally.\r\n\r\n### Usage\r\nFrom the command line, type _happy_<br>\r\nThat's it!\r\n\r\n### Support or Contact\r\nHaving trouble? Contact me per [email](mailto:h.orefice@gmail.com).\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
