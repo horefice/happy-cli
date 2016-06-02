@@ -1,7 +1,7 @@
 {
   "name": "happy-cli",
-  "version": "0.1.0",
-  "description": "Get happy news",
+  "version": "0.1.1",
+  "description": "Get Happy News right from the Command Line",
   "license": "MIT",
   "repository": "horefice/happy-cli",
   "author": {
@@ -14,9 +14,6 @@
   },
   "engines": {
     "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava"
   },
   "files": [
     "cli.js",
@@ -36,12 +33,5 @@
     "ora": "^0.2.1",
     "phantomjs-prebuilt": "^2.1.7",
     "promise-phantom": "^3.1.1"
-  },
-  "devDependencies": {
-    "ava": "*",
-    "xo": "*"
-  },
-  "xo": {
-    "esnext": true
   }
 }
