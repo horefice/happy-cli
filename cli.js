@@ -1,13 +1,12 @@
-#!/usr/bin/env node
 'use strict';
-/* eslint-disable prefer-template */
-const dns = require('dns');
-const meow = require('meow');
-const chalk = require('chalk');
-const logUpdate = require('log-update');
-const ora = require('ora');
 const api = require('./api');
+const chalk = require('chalk');
+const dns = require('dns');
+const logUpdate = require('log-update');
+const meow = require('meow');
+const ora = require('ora');
 
+// help
 meow(`
 	Usage
 	  $ happy
@@ -21,6 +20,7 @@ dns.lookup('fast.com', err => {
 	}
 });
 
+// variables and functions
 let data = {};
 const spinner = ora();
 
@@ -31,8 +31,9 @@ function exit() {
 	process.exit();
 }
 
+// update value
 setInterval(() => {
-	const pre = '\n ' + chalk.gray.dim(spinner.frame()) + chalk.cyan(' Getting lastest happy news!');
+	const pre = '\n ' + chalk.gray.dim(spinner.frame()) + chalk.cyan(' Getting latest happy news!');
 
 	if (!data.isDone) {
 		logUpdate(pre + '\n');
@@ -42,6 +43,7 @@ setInterval(() => {
 	}
 }, 100);
 
+// api
 api((err, result) => {
 	if (err) {
 		throw err;
