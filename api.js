@@ -1,4 +1,5 @@
 'use strict';
+
 const driver = require('promise-phantom');
 const phantomjs = require('phantomjs-prebuilt');
 

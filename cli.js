@@ -1,4 +1,7 @@
+#!/usr/bin/env node
+
 'use strict';
+
 const api = require('./api');
 const chalk = require('chalk');
 const dns = require('dns');
