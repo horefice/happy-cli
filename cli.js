@@ -36,10 +36,10 @@ function exit() {
 
 // update value
 setInterval(() => {
-	const pre = '\n ' + chalk.gray.dim(spinner.frame()) + chalk.cyan(' Getting latest happy news!');
+	const pre = '\n ' + chalk.gray.dim(spinner.frame()) + chalk.cyan(' Getting fresh happy news!\n');
 
 	if (!data.isDone) {
-		logUpdate(pre + '\n');
+		logUpdate(pre);
 		return;
 	} else {
 		exit();
@@ -53,8 +53,4 @@ api((err, result) => {
 	}
 
 	data = result;
-
-	if (data.isDone) {
-		exit();
-	}
 });

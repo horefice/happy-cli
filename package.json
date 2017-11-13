@@ -1,6 +1,6 @@
 {
   "name": "happy-cli",
-  "version": "0.1.3",
+  "version": "0.2",
   "description": "Get Happy News right from the Command Line",
   "license": "MIT",
   "repository": "horefice/happy-cli",
